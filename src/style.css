@@ -1,3 +1,98 @@
-h1 {
+body {
+  color: #394a51;
+}
+
+ul {
+  position: relative;
+  left: -30px;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  display: block;
+  top: 150px;
+  margin: 0 auto;
+  background-color: #cedcc3;
+  display: block;
+  width: 10%;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+}
+
+.left-side {
+  text-align: left;
+  position: relative;
+  padding: 20px;
+}
+
+#city {
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#date,
+#situation {
+  font-size: 20px;
+}
+
+.right-side {
+  text-align: right;
+  position: relative;
+  top: -135px;
+  right: 65px;
+  padding: 5px;
+}
+
+#temp {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.days {
+  position: relative;
   text-align: center;
+  top: -70px;
+}
+
+.icons {
+  position: relative;
+  text-align: center;
+  top: -70px;
+  margin: 0;
+}
+
+#day1,
+#day2,
+#day3,
+#day4,
+#day5 {
+  padding: 15px;
+}
+
+#icon1,
+#icon2,
+#icon3,
+#icon4,
+#icon5 {
+  padding: 20px;
+}
+
+#search {
+  position: relative;
+  bottom: 0px;
+  width: 60%;
+  left: 30px;
+}
+
+a {
+  position: relative;
+  bottom: 0px;
+  left: 60px;
 }

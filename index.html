@@ -12,12 +12,51 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
-    </div>
+      <section class="left-side">
+        <h1 id="city">Tehran</h1>
+        <ul>
+          <li id="date">Wednesday 10:48</li>
+          <li id="description">Cloudy</li>
+        </ul>
+      </section>
 
+      <section class="right-side">
+        <h1 id="temp">12</h1>
+      </section>
+
+      <div class="days row">
+        <span class="col" id="day1">Tuesday</span>
+        <span class="col" id="day2">Friday</span>
+        <span class="col" id="day3">Saturday</span>
+        <span class="col" id="day4">Sunday</span>
+        <span class="col" id="day5">Monday</span>
+      </div>
+
+      <div class="icons row">
+        <span class="col" id="icon1">🎨</span>
+        <span class="col" id="icon2">🎨</span>
+        <span class="col" id="icon3">🎨</span>
+        <span class="col" id="icon4">🎨</span>
+        <span class="col" id="icon5">🎨</span>
+      </div>
+
+      <input id="search-input" placeholder="search..." />
+      <a id="searchBtn" type="button" class="btn btn-primary" value="search">
+        Search
+      </a>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>
