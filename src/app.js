@@ -1,8 +1,33 @@
+function date1(timestamp) {
+  let date = new Date(timestamp)
+  let days = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday',
+  ]
+  let day = days[date.getDay()]
+  let hours = date.getHours()
+  let minutes = date.getMinutes()
+  if (hours < 0) {
+    hours = `0${hours}`
+  }
+  if (minutes < 0) {
+    minutes = `0${minutes}`
+  }
+  return `${day} ${hours}:${minutes}`
+}
+
 function getTemp(response) {
   let d = document.querySelector('#description')
   let t = document.querySelector('#temp')
+  let dateElement = document.querySelector('#date')
   t.innerHTML = Math.round(response.data.main.temp)
   d.innerHTML = response.data.weather[0].description
+  dateElement.innerHTML = date1(response.data.dt * 1000)
 }
 
 function search(event) {
