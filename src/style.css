@@ -20,6 +20,39 @@ img {
   padding: 5px;
 }
 
+a {
+  position: relative;
+  bottom: 0px;
+  left: 60px;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+#celcius,
+#farenheit {
+  text-decoration: none;
+}
+
+#line {
+  position: relative;
+  right: -60px;
+}
+
+.conversion {
+  position: relative;
+  top: -90px;
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   position: relative;
   display: block;
@@ -96,10 +129,4 @@ img {
   bottom: 0px;
   width: 60%;
   left: 30px;
-}
-
-a {
-  position: relative;
-  bottom: 0px;
-  left: 60px;
 }

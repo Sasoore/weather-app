@@ -26,7 +26,8 @@ function getTemp(response) {
   let t = document.querySelector('#temp')
   let dateElement = document.querySelector('#date')
   let iconElement = document.querySelector('#icon')
-  t.innerHTML = Math.round(response.data.main.temp)
+  celciusTemperature = Math.round(response.data.main.temp)
+  t.innerHTML = Math.round(celciusTemperature)
   d.innerHTML = response.data.weather[0].description
   dateElement.innerHTML = date1(response.data.dt * 1000)
   iconElement.setAttribute(
@@ -47,3 +48,28 @@ function search(event) {
 
 let btn = document.querySelector('#searchBtn')
 btn.addEventListener('click', search)
+
+function displayFarenheit(event) {
+  event.preventDefault()
+  celciusClick.classList.remove('active')
+  farenheitClick.classList.add('active')
+  let celTemp = document.querySelector('#temp')
+  let farenheitTemp = Math.round((celciusTemperature * 9) / 5 + 32)
+  celTemp.innerHTML = farenheitTemp
+}
+
+function displaycelcius(event) {
+  event.preventDefault()
+  farenheitClick.classList.remove('active')
+  celciusClick.classList.add('active')
+  let farenTemp = document.querySelector('#temp')
+  farenTemp.innerHTML = celciusTemperature
+}
+
+let celciusTemperature = null
+
+let farenheitClick = document.querySelector('#farenheit')
+farenheitClick.addEventListener('click', displayFarenheit)
+
+let celciusClick = document.querySelector('#celcius')
+celciusClick.addEventListener('click', displaycelcius)

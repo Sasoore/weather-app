@@ -36,7 +36,14 @@
 
       <section class="right-side">
         <img src="http://openweathermap.org/img/wn/02d@2x.png" id="icon" />
-        <h1 id="temp">12</h1>
+        <h1 id="temp">
+          12
+        </h1>
+        <div class="conversion">
+          <a href="#" id="celcius" class="active">°C</a>
+          <span id="line">|</span>
+          <a href="#" id="farenheit">°F</a>
+        </div>
       </section>
 
       <div class="days row">
@@ -56,7 +63,13 @@
       </div>
 
       <input id="search-input" placeholder="search..." />
-      <a id="searchBtn" type="button" class="btn btn-primary" value="search">
+      <a
+        id="searchBtn"
+        type="submit"
+        class="btn btn-primary"
+        value="search"
+        autocapitalize="off"
+      >
         Search
       </a>
     </div>
