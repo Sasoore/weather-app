@@ -25,9 +25,14 @@ function getTemp(response) {
   let d = document.querySelector('#description')
   let t = document.querySelector('#temp')
   let dateElement = document.querySelector('#date')
+  let iconElement = document.querySelector('#icon')
   t.innerHTML = Math.round(response.data.main.temp)
   d.innerHTML = response.data.weather[0].description
   dateElement.innerHTML = date1(response.data.dt * 1000)
+  iconElement.setAttribute(
+    'src',
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+  )
 }
 
 function search(event) {

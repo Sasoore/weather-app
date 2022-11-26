@@ -13,6 +13,13 @@ li {
   margin: 0;
 }
 
+img {
+  position: relative;
+  top: 100px;
+  right: 80px;
+  padding: 5px;
+}
+
 .container {
   position: relative;
   display: block;
@@ -45,7 +52,7 @@ li {
 .right-side {
   text-align: right;
   position: relative;
-  top: -135px;
+  top: -235px;
   right: 65px;
   padding: 5px;
 }
