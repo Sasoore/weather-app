@@ -9,10 +9,18 @@ li {
   margin: 0;
 }
 
-a {
+#celcius,
+#farenheit {
   position: relative;
   bottom: 0px;
   left: 60px;
+}
+
+p {
+  position: relative;
+  bottom: 100px;
+  text-align: center;
+  font-size: 13px;
 }
 
 .container {
