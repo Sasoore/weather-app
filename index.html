@@ -35,7 +35,7 @@
       </section>
 
       <section class="right-side">
-        <img src="http://openweathermap.org/img/wn/02d@2x.png" id="icon" />
+        <img src="http://openweathermap.org/img/wn/02d@2x.png" id="main-icon" />
         <h1 id="temp">
           12
         </h1>
@@ -46,22 +46,9 @@
         </div>
       </section>
 
-      <div class="days row">
-        <span class="col" id="day1">Tuesday</span>
-        <span class="col" id="day2">Friday</span>
-        <span class="col" id="day3">Saturday</span>
-        <span class="col" id="day4">Sunday</span>
-        <span class="col" id="day5">Monday</span>
-      </div>
+      <div id="weather-forecast"></div>
 
-      <div class="icons row">
-        <span class="col" id="icon1">🎨</span>
-        <span class="col" id="icon2">🎨</span>
-        <span class="col" id="icon3">🎨</span>
-        <span class="col" id="icon4">🎨</span>
-        <span class="col" id="icon5">🎨</span>
-      </div>
-
+      <div class="seach-section">
       <input id="search-input" placeholder="search..." />
       <a
         id="searchBtn"
@@ -72,7 +59,8 @@
       >
         Search
       </a>
-    </div>
+      </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
