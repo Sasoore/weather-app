@@ -1,3 +1,15 @@
+.container {
+  display: block;
+  margin: 100px;
+  background-color: #cedcc3;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  padding: 5px;
+  height: 450px;
+  max-width: 625px !important;
+  /* width: 80%; */
+}
+
 ul {
   position: relative;
   left: -30px;
@@ -21,16 +33,6 @@ p {
   bottom: 100px;
   text-align: center;
   font-size: 13px;
-}
-
-.container {
-  display: block;
-  margin: 100px;
-  background-color: #cedcc3;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 5px;
-  padding: 5px;
-  height: 450px;
 }
 
 .conversion {
