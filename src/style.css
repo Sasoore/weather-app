@@ -15,16 +15,14 @@ a {
   left: 60px;
 }
 
-body {
-  background-color: #cedcc3 !important;
-}
-
 .container {
   display: block;
-  margin: 50px;
+  margin: 100px;
   background-color: #cedcc3;
   font-family: 'Montserrat', sans-serif;
   border-radius: 5px;
+  padding: 5px;
+  height: 450px;
 }
 
 .conversion {
@@ -43,7 +41,7 @@ body {
 .right-side {
   text-align: right;
   position: relative;
-  top: -250px;
+  top: -270px;
   right: 65px;
   padding: 5px;
 }
@@ -55,7 +53,6 @@ body {
 }
 
 .icons {
-  position: relative;
   text-align: center;
 }
 
@@ -72,8 +69,9 @@ body {
 #main-icon {
   position: relative;
   top: 100px;
-  right: 80px;
-  padding: 5px;
+  right: 60px;
+  padding-right: 5px;
+  width: 110px;
 }
 
 #celcius,
@@ -98,25 +96,53 @@ body {
 }
 
 #temp {
-  font-size: 80px;
+  font-size: 75px;
   font-weight: bold;
 }
 
-#day1,
-#maxTemp,
-#minTemp {
-  font-size: 12px;
+#weather-forecast {
+  text-align: center;
+}
+
+#day1 {
+  font-size: 15px;
+  text-align: center;
+}
+
+#minTemp,
+#maxTemp {
+  font-size: 13px;
+  padding-top: 0;
+  padding-right: 2px;
 }
 
 #forecast-icon {
-  position: relative;
   width: 50px;
-  left: 0;
+  text-align: center;
 }
 
-.seach-section {
-  position: relative;
-  top: -200px;
-  padding: 15px;
+.search-section {
   text-align: center;
+}
+
+#search-input {
+  position: relative;
+  bottom: 150px;
+  /* left: 50px; */
+  border: 1px solid #69ab98;
+  padding: 5px;
+  width: 300px;
+  /* margin-right: 5px; */
+  margin-top: 0;
+}
+
+#searchBtn {
+  position: relative;
+  left: 0px;
+  bottom: 151px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 0;
+  background-color: #69ab98;
+  border: none;
 }

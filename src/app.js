@@ -54,10 +54,10 @@ function displayForecast(response) {
               />
               <div class="forecast-temps">
                 <span class="col" id="maxTemp"><strong>${Math.round(
-                  ((forecastDay.temp.max - 32) * 5) / 9,
+                  forecastDay.temp.max,
                 )}</strong>°C</span>
                 <span class="col" id="minTemp">${Math.round(
-                  ((forecastDay.temp.min - 32) * 5) / 9,
+                  forecastDay.temp.min,
                 )}°C</span>
               </div>
           </div>`
@@ -70,7 +70,7 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = 'e6c2364656962bdcb16bc352fc42569a'
-  let apiLink = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}`
+  let apiLink = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`
   axios.get(apiLink).then(displayForecast)
 }
 
@@ -115,6 +115,8 @@ function displayFarenheit(event) {
   celciusClick.classList.remove('active')
   farenheitClick.classList.add('active')
   let celTemp = document.querySelector('#temp')
+  // let minTempElement = document.querySelector('#minTemp')
+  // let maxTempElement = document.querySelector('#maxTemp')
   let farenheitTemp = Math.round((celciusTemperature * 9) / 5 + 32)
   celTemp.innerHTML = farenheitTemp
 }
