@@ -7,7 +7,7 @@
   padding: 5px;
   height: 450px;
   max-width: 625px !important;
-  /* width: 80%; */
+  width: 80%;
 }
 
 ul {
@@ -131,18 +131,17 @@ p {
   text-align: center;
 }
 
-.search-section {
-  text-align: center;
+#search-section {
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 #search-input {
   position: relative;
   bottom: 150px;
-  /* left: 50px; */
   border: 1px solid #69ab98;
   padding: 5px;
   width: 300px;
-  /* margin-right: 5px; */
   margin-top: 0;
 }
 
@@ -152,7 +151,7 @@ p {
   bottom: 151px;
   padding-left: 7px;
   padding-right: 7px;
-  margin: 0;
+  margin-left: -50px;
   background-color: #69ab98;
   border: none;
 }

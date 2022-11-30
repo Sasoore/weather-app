@@ -47,18 +47,28 @@
       </section>
       <div id="weather-forecast"></div>
 
-      <div class="search-section">
-        <input id="search-input" placeholder="City..." />
-        <a
-          id="searchBtn"
-          type="submit"
-          class="btn btn-primary"
-          value="search"
-          autocapitalize="off"
-        >
-          Search
-        </a>
-      </div>
+      <form id="search-section">
+        <div class="row">
+          <div class="col-9">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="City..."
+              autocomplete="off"
+              class="form-control"
+            />
+          </div>
+
+          <div class="col-3">
+            <input
+              id="searchBtn"
+              type="submit"
+              class="btn btn-primary w-100"
+              value="search"
+            />
+          </div>
+        </div>
+      </form>
     </div>
 
     <p>

@@ -94,19 +94,12 @@ function getTemp(response) {
 
 ///SEARCH
 
-function search(event) {
-  event.preventDefault()
-  let city = document.querySelector('#search-input')
-  let c = document.querySelector('h1')
+function search(city) {
   let apiKey = 'c5eae455c0d84c0de87118e8f84251f7'
-  let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=${apiKey}&units=metric`
-  c.innerHTML = city.value
+  let apiLink = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
   axios.get(apiLink).then(getTemp)
 }
-
-let btn = document.querySelector('#searchBtn')
-btn.addEventListener('click', search)
 
 ///UNIT CONVERSION
 
@@ -136,3 +129,14 @@ farenheitClick.addEventListener('click', displayFarenheit)
 
 let celciusClick = document.querySelector('#celcius')
 celciusClick.addEventListener('click', displaycelcius)
+
+function handleSubmit(event) {
+  event.preventDefault()
+  let city = document.querySelector('#search-input')
+  let c = document.querySelector('h1')
+  c.innerHTML = city.value
+  search(city.value)
+}
+
+let form = document.querySelector('#search-section')
+form.addEventListener('submit', handleSubmit)
